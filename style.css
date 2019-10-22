@@ -1,0 +1,21 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.box {
+    border: 2px solid black;
+}
