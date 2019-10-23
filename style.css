@@ -27,7 +27,7 @@ body {
     height: 150px;
     width: 150px;
     position: relative;
-    background: radial-gradient(#93a5cf, #e4efe9);
+    /* background: radial-gradient(#93a5cf, #e4efe9); */
 }
 
 .both-sides {
@@ -39,6 +39,13 @@ body {
     align-items: center;
     overflow: hidden; /*this will allow for images to not leak over to another sie or outside*/
     backface-visibility: hidden; /*allows for user to not see back of cards*/
+    /* border-style: solid;  */
+}
+
+.back-face {
+    background: lightcoral;
+    border-style: solid;
+    border-color: mistyrose;
 }
 
 .back-icon {
