@@ -38,12 +38,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; /*this will allow for images to not leak over to another sie or outside*/
+    backface-visibility: hidden; /*allows for user to not see back of cards*/
 }
-
-.back-face {
-  
-}
-
 
 .back-icon {
     width: 140px;
