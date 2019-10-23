@@ -10,17 +10,17 @@ body {
     background: radial-gradient(seashell, peachpuff);  /*the radial gradient allows for a blend of colors for background*/
 } 
 
-.container {
+.game-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,auto);
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px; /* found that grid gap allows for a better aestetic for card look*/
     /* border: .5px solid black; */
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 550px;
     margin: auto;
 }
 
-.box {
+.card {
     border: 2px solid black;
 }
