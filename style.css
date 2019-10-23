@@ -66,4 +66,10 @@ body {
 transform: rotateY(180deg);
 border-style: solid;
 border-color: mistyrose;
+background: navajowhite;
+}
+
+.front-icon {
+    width: 140px;
+    height: 140px;
 }
