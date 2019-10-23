@@ -30,6 +30,16 @@ body {
     /* background: radial-gradient(#93a5cf, #e4efe9); */
 }
 
+
+.card.visible .back-face {
+    transform: rotateY(-180deg);
+}
+
+
+.card.visible .front-face {
+    transform: rotateY(0);
+}
+
 .both-sides {
     position: absolute;
     width: 100%;
@@ -39,7 +49,6 @@ body {
     align-items: center;
     overflow: hidden; /*this will allow for images to not leak over to another sie or outside*/
     backface-visibility: hidden; /*allows for user to not see back of cards*/
-    /* border-style: solid;  */
 }
 
 .back-face {
@@ -54,5 +63,7 @@ body {
 }
 
 .front-face {
-
+transform: rotateY(180deg);
+border-style: solid;
+border-color: mistyrose;
 }
