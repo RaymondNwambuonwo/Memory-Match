@@ -1,16 +1,21 @@
 * {box-sizing: border-box;}
 
+html {
+    min-height: 100vh; /*Allows for the site to be the view of the entire screen*/
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(seashell, peachpuff);
-}
+    background: radial-gradient(seashell, peachpuff);  /*the radial gradient allows for a blend of colors for background*/
+} 
 
 .container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 2px solid black;
+    grid-gap: 10px; /* found that grid gap allows for a better aestetic for card look*/
+    /* border: .5px solid black; */
     height: 500px;
     width: 500px;
     margin: auto;
