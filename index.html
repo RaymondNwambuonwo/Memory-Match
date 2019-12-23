@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Memory Match</title>
 </head>
+<header>
+  <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+</header>
+<body>
  <h1 class="gametitle">
         Memory Match
     </h1>
@@ -18,9 +29,6 @@
      <div id="victory-text"class="overlay-text"> You Win!
     <span class="overlay-text-small">Click to Restart</span>
     </div>
-<header>
-</header>
-<body>
     <div class="game-container">
         <div class="card">
                         <div class="back-face both-sides">
@@ -161,6 +169,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
 </body>
 </html>

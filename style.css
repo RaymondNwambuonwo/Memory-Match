@@ -19,6 +19,17 @@ body {
   text-align: center;
 }
 
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #ffbb89;
+  font-size: 2em;
+}
+
 .game-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -99,7 +110,7 @@ body {
   transform: scale(1);
 }
 
-.card.matched .front-icon {
+.card.matched .front-face .front-icon {
   animation: dance 1s linear infinite 500ms;
 }
 
@@ -129,6 +140,19 @@ body {
   animation: overlay-grow 500ms forwards;
 }
 
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
 @keyframes overlay-grow {
   from {
     background-color: rgba(0, 0, 0, 0);
@@ -140,21 +164,13 @@ body {
   }
 }
 
-@keyframes dance {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  25% {
-    transform: rotate(-100deg);
-  }
-  75% {
-    transform: rotate(100deg);
-  }
-}
-
 @media (max-width: 600px) {
   .game-container {
     grid-template-columns: repeat(2, auto);
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
