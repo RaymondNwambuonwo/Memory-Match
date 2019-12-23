@@ -33,7 +33,7 @@ body {
 .game-info-container {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .game-info {
@@ -46,9 +46,6 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 5px; /* found that grid gap allows for a better aestetic for card look*/
-  /* border: .5px solid black; */
-  /* height: 300px;
-    width: 550px; */
   margin: auto;
   justify-content: center;
   perspective: 500px;
