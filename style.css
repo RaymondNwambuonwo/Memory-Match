@@ -9,9 +9,20 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background: radial-gradient(
-    seashell,
-    peachpuff
+  background: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
   ); /*the radial gradient allows for a blend of colors for background*/
 }
 
@@ -44,11 +55,11 @@ body {
 }
 
 .card {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 150px;
   width: 150px;
   position: relative;
-  /* background: radial-gradient(#93a5cf, #e4efe9); */
+  background: radial-gradient(#93a5cf, #e4efe9);
 }
 
 .card:hover {
@@ -76,9 +87,9 @@ body {
 }
 
 .back-face {
-  background: lightcoral;
+  /* background: lightcoral; */
   border-style: solid;
-  border-color: mistyrose;
+  border-color: #a3cae3;
 }
 
 .back-icon {
@@ -96,7 +107,7 @@ body {
   transform: rotateY(180deg);
   border-style: solid;
   border-color: mistyrose;
-  background: navajowhite;
+  background: radial-gradient(#a3cae3, #e8be99);
 }
 
 .front-icon {

@@ -1,11 +1,10 @@
 class AudioController {
   constructor() {
-    this.bgMusic = new Audio("Assets/Audio/creepy.mp3");
-    this.flipSound = new Audio("Assets/Audio/flip.wav");
-    this.matchSound = new Audio("Assets/Audio/match.wav");
-    this.victorySound = new Audio("Assets/Audio/victory.wav");
-    this.gameOverSound = new Audio("Assets/Audio/gameOver.wav");
-    this.bgMusic.volume = 0.5;
+    this.bgMusic = new Audio("Audio/music.mp3");
+    this.matchSound = new Audio("Audio/correct.mp3");
+    this.victorySound = new Audio("Audio/win.mp3");
+    this.gameOverSound = new Audio("Audio/lose.mp3");
+    this.bgMusic.volume = 0.3;
     this.bgMusic.loop = true;
   }
   startMusic() {
@@ -14,9 +13,6 @@ class AudioController {
   stopMusic() {
     this.bgMusic.pause();
     this.bgMusic.currentTime = 0;
-  }
-  flip() {
-    this.flipSound.play();
   }
   match() {
     this.matchSound.play();
@@ -82,7 +78,6 @@ class MixOrMatch {
   }
   flipCard(card) {
     if (this.canFlipCard(card)) {
-      this.audioController.flip();
       this.totalClicks++;
       this.ticker.innerText = this.totalClicks;
       card.classList.add("visible");
