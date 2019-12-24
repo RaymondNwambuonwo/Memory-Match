@@ -8,6 +8,9 @@ html {
 
 body {
   margin: 0;
+  -webkit-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=132816),
+    auto;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=132816), auto;
   font-family: "Roboto", sans-serif;
   background: linear-gradient(
     to right top,
@@ -60,6 +63,8 @@ body {
 }
 
 .card:hover {
+  -webkit-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=132816),
+    auto;
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=132816), auto;
 }
 
