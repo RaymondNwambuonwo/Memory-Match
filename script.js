@@ -1,15 +1,15 @@
 class AudioController {
   constructor() {
-    this.bgMusic = new Audio("Audio/music.mp3");
+    // this.bgMusic = new Audio("Audio/music.mp3");
     this.matchSound = new Audio("Audio/correct.mp3");
     this.victorySound = new Audio("Audio/win.mp3");
     this.gameOverSound = new Audio("Audio/lose.mp3");
     this.bgMusic.volume = 0.3;
     this.bgMusic.loop = true;
   }
-  startMusic() {
-    this.bgMusic.play();
-  }
+  // startMusic() {
+  //   this.bgMusic.play();
+  // }
   stopMusic() {
     this.bgMusic.pause();
     this.bgMusic.currentTime = 0;
